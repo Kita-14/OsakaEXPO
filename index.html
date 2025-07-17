@@ -11,6 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        .age {
+            font-weight: bold;
+        }
+        .price {
+            color: #d9534f;
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -33,20 +44,7 @@
         </div>
     </nav>
 
-<!-- Header -->
-<section id="header">
-    <header>
-        <span class="image avatar"><img src="images/avatar.png" alt=""/></span>
-        <h1 id="logo"><a href="#">Ohara Git User Group</a></h1>
-    </header>
-    <nav id="nav">
-        <ul>
-            <li><a href="#one" class="active">Japan Git User Groupとは</a></li>
-            <li><a href="#two">イベントのお知らせ</a></li>
-            <li><a href="#three">過去のイベント</a></li>
-        </ul>
-    </nav>
-</section>
+
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -70,77 +68,73 @@
         <!-- Two -->
         <section id="two">
             <div class="container">
-                <h2>第２回Git勉強会</h2>
-                <div class="features">
-                    <p>第２回Git勉強会を開催します。みなさま、是非ご参加ください！</p>
-                    <article>
-                        <h3>イベント日時・場所</h3>
-                        <p>3月23日 19:00開始</p>
-                        <p>株式会社大原商事 イベントセミナー会場</p>
-                    </article>
-                    <article>
-                        <h3>スピーカー</h3>
-                        <div class="speaker">
-                            <!-- ToDo:プロフィール画像を受け取ったら更新する -->
-                            <img src="images/speaker.png" alt="" class="image"/>
-                            <div class="inner">
-                                <h4>岩崎さん</h4>
-                                <p>三重県を中心に仕事している、情報処理科の先生です。</p>
-                                <p>木曜日と日曜日は太鼓をしています。</p>
-                                <p>得意な料理はハンバーグです。</p>
-                            </div>
-                        </div>
-                        <div class="speaker">
-                            <img src="images/speaker2.png" alt="" class="image"/>
-                            <div class="inner">
-                                <h4>三谷さん</h4>
-                                <p>明和町に住んでいる若手プログラマー</p>
-                                <p>休日は猫と戯れることが多い。</p>
-                                <p>得意料理はたこ焼き</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article>
-                        <h3>タイムテーブル</h3>
-                        <div class="table-wrapper">
-                            <table class="alt">
-                                <thead>
-                                <tr>
-                                    <th>時間</th>
-                                    <th>内容</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>19:00〜19:05</td>
-                                    <td>オープニング</td>
-                                </tr>
-                                <tr>
-                                    <td>19:05〜19:50</td>
-                                    <td>私のgitの使い方(岩崎先生)</td>
-                                </tr>
-                                <tr>
-                                    <td>19:50〜20:00</td>
-                                    <td>休憩</td>
-                                </tr>
-                                <tr>
-                                    <td>20:00〜20:45</td>
-                                    <td>現場で使える"実践Git（原口先生）</td>
-                                </tr>
-                                <tr>
-                                    <td>20:45〜21:00</td>
-                                    <td>クロージング</td>
-                                </tr>
-                                <tr>
-                                    <td>21:00〜</td>
-                                    <td>懇親会</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </article>
+                <h2>チケット情報</h2>
+                <h4>Osaka万博のチケットは、以下の種類があります。</h4>
+            <li class="container">
+						<table class="vi_table01">
+							<thead>
+								<tr>
+									<th colspan="3">購入期間：<span class="big">4/13～10/13</span>（会期中）</th>
+									<th class="date">来場日</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="type" rowspan="3">
+										平日券
+										<p class="ticket_img"><img decoding="async" src="./images/index-ti-week.gif" alt="平日券"></p>
+									</th>
+									<td class="age">大人</td>
+									<td class="price">6,000<small>円</small></td>
+									<td rowspan="3">会期中に購入できて「平日」に１回入場可能</td>
+								</tr>
+								<tr>
+									<td class="age">中人</td>
+									<td class="price">3,500<small>円</small></td>
+								</tr>
+								<tr>
+									<td class="age">小人</td>
+									<td class="price">1,500<small>円</small></td>
+								</tr>
+								<tr>
+									<th class="type" rowspan="3">
+										夜間券
+										<p class="ticket_img"><img decoding="async" src="./images/index-ti-night.gif" alt="夜間券"></p>
+									</th>
+									<td class="age">大人</td>
+									<td class="price">3,700<small>円</small></td>
+									<td rowspan="3">会期中に購入できて17時以降いつでも１回入場可能</td>
+								</tr>
+								<tr>
+									<td class="age">中人</td>
+									<td class="price">2,000<small>円</small></td>
+								</tr>
+								<tr>
+									<td class="age">小人</td>
+									<td class="price">1,000<small>円</small></td>
+								</tr>
+								<tr>
+									<th class="type" rowspan="3">
+										一日券
+										<p class="ticket_img"><img decoding="async" src="./images/index-ti-one.gif" alt="一日券"></p>
+									</th>
+									<td class="age">大人</td>
+									<td class="price">7,500<small>円</small></td>
+									<td rowspan="3">会期中に購入できていつでも1回入場可能</td>
+								</tr>
+								<tr>
+									<td class="age">中人</td>
+									<td class="price">4,200<small>円</small></td>
+								</tr>
+								<tr>
+									<td class="age">小人</td>
+									<td class="price">1,800<small>円</small></td>
+								</tr>
+							</tbody>
+						</table>
+
+					</li>
                 </div>
-            </div>
         </section>
 
         <!-- Three -->
@@ -148,7 +142,7 @@
             <div class="container">
                <h2>会場マップ</h2>
                <div class="map">
-                   <img src="./images/index-map.png" alt="会場マップ" />
+                   <img src="./images/index-map.png" alt="会場マップ" style="max-width: 100%;"/>
                </div>
             </div>
         </section>
