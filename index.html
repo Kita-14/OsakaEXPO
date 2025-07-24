@@ -21,6 +21,27 @@
             font-size: 2.2em;
             font-weight: bold;
         }
+        .img-ring {
+            width: 100%;
+            height: auto;
+        }
+        .img-inner {
+            display: flex;
+            gap: 30px;
+            margin: 0 auto;
+            /* padding: 300px 0; */
+            max-width: 100%;
+        }
+        .img-card{
+            width: 33.33%;
+        }
+        .major h2 {
+            text-align: center;
+           margin-bottom: 20px ;
+        }
+        .one {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +68,7 @@
 
 
 <!-- Wrapper -->
-<div id="wrapper">
+<!-- <div id="wrapper"> -->
 
     <!-- Main -->
     <div id="main">
@@ -56,15 +77,35 @@
         <section id="one">
             <div class="container">
                 <header class="major">
-                    <h2>Ohara Git User Group</h2>
+                    <h2>大阪万博</h2>
                 </header>
                 <img src="./images/index-ring.jpg" class="img-ring" alt="大屋根リングの画像">
-                <p>Osaka万博</p>
-                <p>勉強会を企画・運営し、情報交換の場を提供しています。</p>
-                <p>このコミュニティーは、非営利目的で活動しています。</p>
+                <h2></h2>
+            </div>
+            <div class="container text-center">
+                <div class="img-inner">
+                    <div class="img-card">
+                        <a href="Domestic.html">
+                            <img src="./images/index-kaigai.png" alt="海外パビリオンの画像" class="img-fluid">
+                            <h3>海外パビリオン</h3>
+                        </a>
+                    </div>
+                    <div class="img-card">
+                        <a href="abroad.html">
+                        <img src="./images/index-kokunai.png" alt="国内パビリオンの画像" class="img-fluid">
+                        <h3>国内パビリオン</h3>
+                        </a>
+                    </div>
+                    <div class="img-card">
+                        <a href="food.html">
+                            <img src="./images/index-gurume.jpg" alt="グルメの画像" class="img-fluid">
+                            <h3>グルメ</h3>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-
+        
         <!-- Two -->
         <section id="two">
             <div class="container">
@@ -158,7 +199,7 @@
         </div>
     </section>
 
-</div>
+<!-- </div> -->
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
